@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Jyothi Chinta</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/utils.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+		    var position = $(this).scrollTop();
+
+		    $('section').each(function() {
+		        var target = $(this).offset().top;
+		        var id = $(this).attr('id');
+
+		        if (position + 500 >= target) {
+		            $('nav > ul > li > a').removeClass('active');
+		            $('nav > ul > li > a[href=#' + id + ']').addClass('active');
+		        }
+		    });
+		});
+	</script>
+ </head>
+ <body>
+<section id="header-section">
+	<header>
+		<figure class="image profile-icon"><img src="assets/images/profilepic.jpg" alt=""></figure>
+		<h1 id="logo"><a href="#">Sri Jyothi</a></h1>
+		<article>
+		<p>
+			<blockquote cite="https://en.wikipedia.org/wiki/Julia_Gulliver"> Let us never be betrayed into saying we have finished our education; because that would mean we had stopped growing....!!!
+			</blockquote>
+			<br> 	-Julia H. Gulliver
+		</p>
+	</article>
+	</header>
+	<nav id="nav-section">
+		<ul>
+			<li><a href="#aboutme" class="nav active">About Me</a></li>
+			<li><a href="#news" class="nav">Technology Info</a></li>
+			<li><a href="#schedule" class="nav">My Schedule</a></li>
+			<li><a href="gallery.html" class="nav">Gallery</a></li>
+      		<li><a href="tictactoe.html" class="nav">Lets Play!</a></li>
+			<li><a href="feedback.html" class="nav">Contact Me</a></li>
+		</ul>
+	</nav>
+	<footer>
+		<ul class="icons">
+			<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100085005255997&mibextid=LQQJ4d" class="icon"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a target="_blank" href="https://www.instagram.com/" class="icon"><i class="fa fa-instagram"></i></a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/chinta-sri-jyothi-656739169" class="icon"><i class="fa fa-linkedin-square"></i></a></li>
+			<li><a href="mailto:chintasrijyothi56@gmail.com" class="icon"><i class="fa fa-envelope"></i></a></li>
+		</ul>
+	</footer>
+</section>
+<div id="main-section">
+	<div id="main-container">
+		<section id="aboutme">
+			<div class="banner" data-position="center">
+				<img src="assets/images/banner-1.jpg" alt="">
+			</div>
+			<div class="container" style="margin-top: 20px;">
+				<header class="major">
+					<h2>Adios!!!</h2>
+				</header>
+				<p style="line-height: 32px; font-size: 1.5rem;">
+				My name is Sri Jyothi Chinta and if that is too hard for you, I will go by Jyo too. I am a computer science student who is passionate about exploring new places and cultures. I am an avid traveler and I believe that traveling has helped me broaden my horizons and has given me a new perspective on life.
+				<br/><br/>
+
+				I have been fascinated by computers and technology since I was a child, and my passion has led me to pursue a degree in computer science. I love exploring new technologies and finding ways to improve people's lives through my work.
+
+				Aside from my love for technology, I am also an avid photographer and I love to capture the beauty of the world through my lens. My travels have allowed me to capture some amazing moments and memories, and I love to share these experiences with others.
+				<br/><br/>
+
+				Through this website, I hope to share my travels and experiences with others, and to show how technology and computer science can be used to make the world a better place. Whether you're a fellow traveler or a fellow computer science enthusiast, I hope you'll join me on this journey!
+				</p>
+			</div>
+		</section>
+
+		<section id="news">
+			<div class="container">
+				<header class="major">
+					<h2>Technology Info</h2>
+				</header>
+					<div class="row"> 
+					  <div class="column">
+					    <a target="_blank" href="https://www.ey.com/en_us/digital/how-to-use-iot-and-data-to-transform-the-economics-of-a-sport">
+					    	<img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/news/2019/04/ey-velon-hammer-series-street-race.jpg.rendition.900.600.jpg" style="width:100%" />
+					    	<span class="news-label">How to use IoT and data to transform the economics of a sport</span>
+						</a>
+
+						<a class="audioPlayer" onClick="toogleAudioPlay(this)">
+							<img src="assets/images/chatgpt.jpg" style="width:100%" />
+							<audio id="myAudio" style="width:100%" controls>
+           				   		<source src="assets/media/audio/limitations-chatgpt.mp3" type="audio/mpeg">
+							</audio>
+							<span class="news-label">Listen: Chatting with ChatGPT: Pros and Cons of Advanced Language AI</span>
+						</a>
+						
+						</div>
+
+					  <div class="column">
+						   <a id="anchrTech">
+						      <img src="assets/images/new_tech_thumbnail.jpg"  style="width:100%" /> 
+						   	<span class="news-label">New technologies that will blow your mind</span>
+						   </a>
+
+					  	<a target="_blank" href="https://www.ey.com/en_us/trusted-intelligence/are-you-moving-at-the-speed-of-trust">
+					  		<img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/trusted-intelligence/ey-mountain-climbers-walking-through-blizzard-tied-together-with-rope-static-no-zoom.jpg.rendition.900.600.jpg" style="width:100%" />
+					  		<span class="news-label">Are you moving at the speed of trust?</span>
+					  	</a>
+					   <a target="_blank" href="https://www.ey.com/en_us/trusted-intelligence/how-does-trusted-data-help-you-realize-transformation">
+					   	<img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/trusted-intelligence/ey-woman-synchronising-smartwatch-and-mobile-phone-static.jpg.rendition.1800.1200.jpg" style="width:100%" />
+					   	<span class="news-label">How does trusted data help you realize transformation?</span>
+					   </a>
+					  
+					  </div>
+
+					  <div class="column">
+					  	<a target="_blank" href="https://www.ey.com/en_us/consulting/whats-essential-to-scale-blockchain">
+					  		<img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/advisory/ey-breakwater-sea-portugal-static.jpg.rendition.1800.1200.jpg" style="width:100%" />
+					  		<span class="news-label">What’s essential to scale blockchain?</span>
+					  	</a>
+						<a target="_blank" href="https://www.sciencedaily.com/releases/2023/01/230130144803.htm">
+							<img src="https://www.solodev.com/assets/recent-news/news-entry-1.jpg" style="width:100%" />
+							<span class="news-label">New method to control electron spin paves the way for efficient quantum computers</span>
+						</a>
+					    <a target="_blank" href="https://www.ey.com/en_us/alliances/how-music-companies-can-evolve-the-fan-experience">
+					    	<img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/government-and-public-sector/ey-rear-view-people-enjoying-music-concert.jpg.rendition.1800.1200.jpg" style="width:100%" />
+					    	<span class="news-label">How music companies can evolve the fan experience</span>
+					    </a>
+					  </div>
+				</div>
+			</div>
+		</section>
+
+		<section id="schedule">
+			<div class="container">
+				<h2>My Weekly Schedule</h2>
+			    <table>
+			      <thead>
+			        <tr>
+			          <th></th>
+			          <th>Monday</th>
+			          <th>Tuesday</th>
+			          <th>Wednesday</th>
+			          <th>Thursday</th>
+			          <th>Friday</th>
+			          <th class="weekend">Saturday</th>
+			          <th class="weekend">Sunday</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td class="time-col">8am - 9am</td>
+			          <td class="Work" rowspan="4">Work</td>
+			          <td class="Work" rowspan="4">Work</td>
+			          <td class="Work" rowspan="4">Work</td>
+			          <td class="Work" rowspan="4">Work</td>
+			          <td class="Work" rowspan="4">Work</td>
+			          <td title="free" class="free" rowspan="4"></td>
+			          <td title="free" class="free" rowspan="4"></td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">9am - 10am</td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">10am - 11am</td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">11am - 12pm</td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">12pm - 1pm</td>
+			          <td class="Lunch">Lunch</td>
+			          <td class="Lunch">Lunch</td>
+			          <td class="Lunch">Lunch</td>
+			          <td class="Lunch">Lunch</td>
+			          <td class="Lunch">Lunch</td>
+			          <td class="Lunch">Lunch</td>
+			          <td class="Lunch">Lunch</td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">1pm - 2pm</td>
+			          <td class="Work">Work</td>
+			          <td class="Work" rowspan="3">Work</td>
+			          <td class="Work">Work</td>
+			          <td class="Work" rowspan="3">Work</td>
+			          <td class="Work">Work</td>
+			          <td title="free" class="free" rowspan="4"></td>
+			          <td title="free" class="free" rowspan="4"></td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">2pm - 3pm</td>
+			          <td title="Web Application and Development" class="WAD">WAD</td>
+			          <td title="Web Application and Development"  class="WAD">WAD</td>
+			          <td title="Web Application and Development"  class="WAD">WAD</td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">3pm - 4pm</td>
+			          <td class="free" title="free"></td>
+			          <td class="free" title="free"></td>
+			          <td class="free" title="free"></td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">4pm - 5pm</td>
+			          <td title="Computational Statistics - II" class="CS-II">CS-II</td>
+			          <td title="Advanced Operating Systems" class="AOS">AOS</td>
+			          <td title="Computational Statistics - II" class="CS-II">CS-II</td>
+			          <td title="Advanced Operating Systems" class="AOS">AOS</td>
+			          <td title="Computational Statistics - II" class="CS-II">CS-II</td>
+			        </tr>
+			        <tr>
+			          <td class="time-col">5pm - 6pm</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			        <tr>
+			          <td class="time-col">6pm - 7pm</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			          <td class="Gym">Gym</td>
+			        </tr>
+			      </tbody>
+			    </table>
+			</div>
+		</section>
+						
+		<section class="footer">
+			<div><ul class="copyright"><li>© Jyo 2023</li></ul></div>
+		</section>
+	</div>
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+	    <span id="btnClose" class="close">&times;</span>
+	     <video  class="modal-video"  controls poster="assets/images/new_tech_thumbnail.jpg"> 
+			<source src="assets/media/video/new_tech.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+
+</div>
+</body>
+</html>

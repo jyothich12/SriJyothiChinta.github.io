@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4x4 Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/tictactoe.js"></script>
+ </head>
+ <body>
+<section id="header-section">
+  <header>
+    <figure class="image profile-icon"><img src="assets/images/profilepic.jpg" alt=""></figure>
+    <h1 id="logo"><a href="#">Sri Jyothi</a></h1>
+    <article>
+    <p>
+      <blockquote cite="https://en.wikipedia.org/wiki/Julia_Gulliver"> Let us never be betrayed into saying we have finished our education; because that would mean we had stopped growing....!!!
+      </blockquote>
+      <br>  -Julia H. Gulliver
+    </p>
+  </article>
+  </header>
+  <nav id="nav-section">
+    <ul>
+      <li><a href="index.html#aboutme" class="nav">About Me</a></li>
+      <li><a href="index.html#news" class="nav">Technology Info</a></li>
+      <li><a href="index.html#schedule" class="nav">My Schedule</a></li>
+      <li><a href="gallery.html" class="nav">Gallery</a></li>
+      <li><a href="tictactoe.html" class="nav active">Lets Play!</a></li>
+      <li><a href="feedback.html" class="nav">Contact Me</a></li>
+
+     </ul>
+  </nav>
+  <footer>
+    <ul class="icons">
+      <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100085005255997&mibextid=LQQJ4d" class="icon"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/" class="icon"><i class="fa fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/chinta-sri-jyothi-656739169" class="icon"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a href="mailto:chintasrijyothi56@gmail.com" class="icon"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+  </footer>
+</section>
+
+<div id="main-section">
+  <div id="main-container">
+  <h1>4x4 Tic Tac Toe</h1>
+
+  <div id="mode-container">
+    <h4 class="mode-title">Game Mode</h4>
+    <div class="mode-radio">
+      <label>
+      <input type="radio" checked name="winLength" value="3" onchange="updateWinningLength(3)">
+      3 In a Row
+      </label>
+      <label>
+      <input type="radio" name="winLength" checked value="4" onchange="updateWinningLength(4)">
+      4 In a Row
+      </label>
+    </div>
+    </div>
+  <div>
+
+  <div id="level-container">
+    <h4 class="level-title">Dificulty Level</h4>
+    <div class="level-radio">
+      <label>
+      <input type="radio" checked name="difficulty" value="easy" onchange="updateDifficulty(1)">
+      Easy
+      </label>
+      <label>
+      <input type="radio" name="difficulty" value="medium" onchange="updateDifficulty(2)">
+      Medium
+      </label>
+      <label>
+      <input type="radio" name="difficulty" value="hard" onchange="updateDifficulty(3)">
+      Hard
+      </label>
+    </div>
+    </div>
+  <div>
+  <div class="board">
+      <div class="row">
+        <div class="cell" data-cell index="0"></div>
+        <div class="cell" data-cell index="1"></div>
+        <div class="cell" data-cell index="2"></div>
+        <div class="cell" data-cell index="3"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-cell index="4"></div>
+        <div class="cell" data-cell index="5"></div>
+        <div class="cell" data-cell index="6"></div>
+        <div class="cell" data-cell index="7"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-cell index="8"></div>
+        <div class="cell" data-cell index="9"></div>
+        <div class="cell" data-cell index="10"></div>
+        <div class="cell" data-cell index="11"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-cell index="12"></div>
+        <div class="cell" data-cell index="13"></div>
+        <div class="cell" data-cell index="14"></div>
+        <div class="cell" data-cell index="15"></div>
+      </div>
+    </div>
+    <div class="status">
+      <div class="player-status">
+        <p>Player:</p>
+        <div class="player-marker" id="player-marker">X</div>
+      </div>
+      <div class="computer-status">
+        <p>Computer:</p>
+        <div class="computer-marker" id="computer-marker">O</div>
+      </div>
+      <div class="winner" id="winner"></div>
+      <button class="restart-btn" id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div>
+      <ul class="copyright"><li>© Jyo 2023</li></ul></div>
+  </section>
+</div>
+
+
+</body>
+</html>
