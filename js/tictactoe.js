@@ -1,5 +1,3 @@
-
-
 let DIFICULTY_LEVEL = 1;
 let WINNING_LENGTH = 4;
 
@@ -28,49 +26,6 @@ $(document).ready(function() {
   const changePlayer = () => {
     currentPlayer = currentPlayer === playerMarker ? computerMarker : playerMarker;
   };
-
-  /*
-
-  // Function to check if the game is over
-  const checkGameOver = () => {
-    // Check rows
-    for (let i = 0; i < cells.length; i += 4) {
-      if (cells.eq(i).text() === currentPlayer && cells.eq(i+1).text() === currentPlayer && cells.eq(i+2).text() === currentPlayer && cells.eq(i+3).text() === currentPlayer) {
-        return 1;
-      }
-    }
-
-    // Check columns
-    for (let i = 0; i < 4; i++) {
-      if (cells.eq(i).text() === currentPlayer && cells.eq(i+4).text() === currentPlayer && cells.eq(i+8).text() === currentPlayer && cells.eq(i+12).text() === currentPlayer) {
-        return 1;
-      }
-    }
-
-    // Check diagonals
-    if (cells.eq(0).text() === currentPlayer && cells.eq(5).text() === currentPlayer && cells.eq(10).text() === currentPlayer && cells.eq(15).text() === currentPlayer) {
-      return 1;
-    }
-    if (cells.eq(3).text() === currentPlayer && cells.eq(6).text() === currentPlayer && cells.eq(9).text() === currentPlayer && cells.eq(12).text() === currentPlayer) {
-      return 1;
-    }
-
-    // Check if board is full
-    let isBoardFull = true;
-    for (let i = 0; i < cells.length; i++) {
-      if (cells.eq(i).text() === "") {
-        isBoardFull = false;
-        break;
-     }
-    }
-    if (isBoardFull) {
-      return 0;
-    }
-
-    // If game is not over, return -1
-  //  return -1;
- // };
- */
 
     // Function to check if the game is over
   const checkWin = (board, currentPlayer) => {
@@ -115,12 +70,13 @@ $(document).ready(function() {
         count++;
         if (count === WINNING_LENGTH) {
           return 1;
+          }
         }
-      }
-      else{
+      else {
         count=0;
       }
     }
+
     count = 0;
     for(let i = 3; i < 13; i += 3){
       if (board[i] === currentPlayer) {
@@ -133,6 +89,59 @@ $(document).ready(function() {
         count=0;
       }
     }
+
+    count = 0;
+    for(let i = 1; i < 12; i += 5){
+      if (board[i] === currentPlayer) {
+        count++;
+        if (count === WINNING_LENGTH) {
+          return 1;
+        }
+      }
+      else{
+        count=0;
+      }
+    }
+
+    count = 0;
+    for(let i = 4; i < 15; i += 5){
+      if (board[i] === currentPlayer) {
+        count++;
+        if (count === WINNING_LENGTH) {
+          return 1;
+        }
+      }
+      else{
+        count=0;
+      }
+    }
+
+    count = 0;
+    for(let i = 2; i < 9; i += 3){
+      if (board[i] === currentPlayer) {
+        count++;
+        if (count === WINNING_LENGTH) {
+          return 1;
+        }
+      }
+      else{
+        count=0;
+      }
+    }
+
+    count = 0;
+    for(let i = 7; i < 14; i += 3){
+      if (board[i] === currentPlayer) {
+        count++;
+        if (count === WINNING_LENGTH) {
+          return 1;
+        }
+      }
+      else{
+        count=0;
+      }
+    }
+
 
     // Check if board is full
     let isBoardFull = true;
