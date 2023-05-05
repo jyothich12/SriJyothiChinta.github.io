@@ -20,11 +20,13 @@ function validateForm() {
     if(!validateComments())
         return false;
 
+    /*
     if (confirm("Thank you for submitting the form. Do you need a present as a token of reward") == true) {
         return true;
     }
     else
         return false;
+    */
 
     return true;
 
