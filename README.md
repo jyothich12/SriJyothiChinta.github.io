@@ -1,4 +1,4 @@
-# Web Application Development Project
+# My Portfolio
 
 This is a web project developed as part of a Web Application Development course. The website is designed to present the skills and knowledge acquired in the course and to demonstrate skills in various web technologies and programming languages.
 
