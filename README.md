@@ -17,12 +17,6 @@ This is a web project showcasing my expertise in full-stack development, built a
 - Git and GitHub for version control
 
 
-**Deployment**
-
-The website is implemented using the Render platform, which provides reliable and scalable hosting for web applications. The deployment process is fully automated and ensures that the latest version of the code is always running. The git hub repository is 
-https://github.com/jyothich12/WebApplicationsProject
-
-
 **Content**
 
 The website has several pages that provide information on different topics. They include:
