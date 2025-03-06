@@ -62,14 +62,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 ul.coursework {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px; /* Adjust padding to ensure bullets are visible */
+    margin: 0;
+
 }
 
 ul.coursework li {
-    background-color: #f4f4f4;
+    background-color: transparent;
     margin: 10px 0;
-    padding: 10px;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
